@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Slice Shop · keegou</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="config.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
@@ -39,7 +40,7 @@ body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weig
 <nav class="nav">
 <div class="nav-inner">
 <a class="nav-brand" href="index.html">
-<img class="nav-avatar" src="头像图片URL" alt="keegou">
+<img class="nav-avatar" src="" alt="keegou" id="avatar-img">
 <span>keegou</span>
 </a>
 <ul class="nav-links">
@@ -99,6 +100,10 @@ body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weig
 
 <p class="free-note">Looking for something lighter? <a href="free.html">Free Slices — including The Quiet Growth Notebook — are here.</a></p>
 </div>
+
+<script>
+document.getElementById('avatar-img').src = AVATAR_URL;
+</script>
 
 </body>
 </html>

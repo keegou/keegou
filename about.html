@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About · keegou</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="config.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
@@ -31,7 +32,7 @@ hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
 <nav class="nav">
 <div class="nav-inner">
 <a class="nav-brand" href="index.html">
-<img class="nav-avatar" src="头像图片URL" alt="keegou">
+<img class="nav-avatar" src="" alt="keegou" id="avatar-img">
 <span>keegou</span>
 </a>
 <ul class="nav-links">
@@ -59,6 +60,10 @@ hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
 <hr>
 <div class="about-section"><p>You will not find a biography, a photo, or a list of achievements on this page. Who the writer is outside of these words is irrelevant to what the words contain. The only thing that matters is whether the words land. If they do, they are yours. If they don't, they were never meant for you — and that is okay.</p></div>
 </div>
+
+<script>
+document.getElementById('avatar-img').src = AVATAR_URL;
+</script>
 
 </body>
 </html>

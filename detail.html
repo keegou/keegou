@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Slice Detail · keegou</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="config.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
@@ -39,7 +40,7 @@ body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weig
 <nav class="nav">
 <div class="nav-inner">
 <a class="nav-brand" href="index.html">
-<img class="nav-avatar" src="头像图片URL" alt="keegou">
+<img class="nav-avatar" src="" alt="keegou" id="avatar-img">
 <span>keegou</span>
 </a>
 <ul class="nav-links">
@@ -61,19 +62,26 @@ body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weig
 <div class="detail-usage"><strong style="font-family:'Inter',sans-serif;font-weight:600;color:#8B6F5E;">Use this when</strong><br>You're standing at a decision — big or small — and the weight of it feels heavier than the choice itself. Read it before you walk through, or after, when you're wondering if you should have stayed.</div>
 
 <div class="detail-actions">
-<!-- ============ 第2处：改购买链接 ============ -->
-<a class="btn-primary" href="#">Buy this slice — $5</a>
+<!-- ============ 第2处：购买链接，自动读取config.js ============ -->
+<a class="btn-primary" href="#" id="buy-btn">Buy this slice — $5</a>
 <p class="btn-note">The only difference is whether you choose to support the work.</p>
-<!-- ============ 第3处：改免费下载链接 ============ -->
-<a class="btn-secondary" href="#">Free download</a>
+<!-- ============ 第3处：下载链接，自动读取config.js ============ -->
+<a class="btn-secondary" href="#" id="download-btn">Free download</a>
 </div>
 
-<p class="btn-note">If you need this but can't afford it right now, <a href="mailto:hello@keegou.com" style="color:#8B6F5E;text-decoration:none;border-bottom:1px solid #E0D6CC;">email me</a>. No need to explain.</p>
+<p class="btn-note">If you need this but can't afford it right now, <a href="" id="email-link" style="color:#8B6F5E;text-decoration:none;border-bottom:1px solid #E0D6CC;">email me</a>. No need to explain.</p>
 
 <div class="detail-disc"><strong style="font-family:'Inter',sans-serif;font-weight:600;color:#8B6F5E;">Before you take it —</strong><br>This is not advice. It is not a guide. It is one person's evidence — a moment written down so it doesn't disappear. If you're looking for answers, this is not the place. If you're looking for company, stay a while.</div>
 
 <p class="detail-back"><a href="shop.html">Back to The Slice Shop</a></p>
 </div>
+
+<script>
+document.getElementById('avatar-img').src = AVATAR_URL;
+document.getElementById('buy-btn').href = BUY_URL;
+document.getElementById('download-btn').href = DOWNLOAD_URL;
+document.getElementById('email-link').href = "mailto:" + EMAIL;
+</script>
 
 </body>
 </html>
