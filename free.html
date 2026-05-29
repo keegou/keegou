@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Slices · keegou</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#F6F1EC;border-bottom:1px solid #E0D6CC;font-family:'Inter',sans-serif;font-size:11pt;color:#8B6F5E}
+.nav-inner{max-width:640px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#8B6F5E}
+.nav-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #E0D6CC;opacity:.85}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:#8B6F5E;text-decoration:none}
+.nav-links a:hover{opacity:.6}
+.nav-links a.active{font-weight:600}
+.page{max-width:640px;margin:0 auto;padding:80px 24px 60px}
+.page-title{font-family:'Inter',sans-serif;font-weight:600;font-size:16pt;color:#8B6F5E;text-align:center;margin-bottom:8px}
+.page-subtitle{font-family:'Inter',sans-serif;font-weight:400;font-size:11pt;color:#3A3A3A;text-align:center;margin-bottom:40px}
+.back-link{font-family:'Inter',sans-serif;font-weight:400;font-size:10pt;color:#9B9B9B;margin-bottom:24px;display:inline-block}
+.back-link a{color:#8B6F5E;text-decoration:none}
+.series{margin-bottom:48px}
+.series-title{font-family:'Inter',sans-serif;font-weight:600;font-size:14pt;color:#8B6F5E;margin-bottom:4px}
+.series-sub{font-family:'Inter',sans-serif;font-weight:400;font-size:10pt;font-style:italic;color:#9B9B9B;margin-bottom:4px}
+.series-desc{font-size:11pt;color:#3A3A3A;margin-bottom:20px}
+.entry{display:flex;justify-content:space-between;align-items:flex-start;padding:10px 0;border-bottom:1px solid #E0D6CC}
+.entry:last-child{border-bottom:none}
+.entry-info{flex:1;padding-right:16px}
+.entry-name{font-family:'Inter',sans-serif;font-weight:400;font-size:11pt;color:#3A3A3A}
+.entry-desc{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B}
+.entry-status{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;color:#9B9B9B;white-space:nowrap}
+.entry-status.ok{color:#6B8F5E}
+.entry-dl{flex-shrink:0;font-family:'Inter',sans-serif;font-size:10pt;color:#8B6F5E;background:none;border:1px solid #E0D6CC;padding:4px 14px;cursor:pointer}
+.entry-dl:hover{opacity:.6}
+hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
+@media(max-width:640px){.page{padding:80px 20px 40px}.entry{flex-wrap:wrap;gap:6px}.entry-info{width:100%;padding-right:0}.nav-links{gap:16px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a class="nav-brand" href="index.html">
+<img class="nav-avatar" src="头像图片URL" alt="keegou">
+<span>keegou</span>
+</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Slice Shop</a></li>
+<li><a href="free.html" class="active">Free Slices</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="page">
+<p class="back-link"><a href="index.html">← Home</a></p>
+<h2 class="page-title">Free Slices</h2>
+<p class="page-subtitle">Small moments, written down. No payment needed.</p>
+
+<div class="series">
+<h3 class="series-title">The Quiet Growth Notebook</h3>
+<p class="series-sub">Read in order, or don't.</p>
+<p class="series-desc">A 12-week series of quiet exercises. Not a course. Not a challenge. Just a place to notice things.</p>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 1: Welcome to Pausing</p><p class="entry-desc">Start where you are. Look around. That's all.</p></div><span class="entry-status ok">Available</span><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 2: The Small Things That Quietly Drain You</p><p class="entry-desc">What if the smallest moments carry the most meaning?</p></div><span class="entry-status ok">Available</span><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 3: Sitting with Silence</p><p class="entry-desc">Not everything needs a response. Not every pause needs to be filled.</p></div><span class="entry-status">Coming soon</span><button class="entry-dl" disabled style="opacity:0.3;cursor:default;">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 4: The Practice of Letting Go</p><p class="entry-desc">Releasing what was never yours to hold.</p></div><span class="entry-status">Coming soon</span><button class="entry-dl" disabled style="opacity:0.3;cursor:default;">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 5: Listening to Your Own Voice</p><p class="entry-desc">Before the world tells you what to think, what do you hear?</p></div><span class="entry-status">Coming soon</span><button class="entry-dl" disabled style="opacity:0.3;cursor:default;">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Week 6: Enough Already</p><p class="entry-desc">On stopping before the finish line moves again.</p></div><span class="entry-status">Coming soon</span><button class="entry-dl" disabled style="opacity:0.3;cursor:default;">Download</button></div>
+</div>
+
+<hr>
+
+<div class="series">
+<h3 class="series-title">Free Slices</h3>
+<div class="entry"><div class="entry-info"><p class="entry-name">The Lighter Clicked Once</p><p class="entry-desc">A short piece about a single moment in the dark.</p></div><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">A Scent Passed By</p><p class="entry-desc">A scent, a stranger, a second. A story in three sentences.</p></div><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Ten Months</p><p class="entry-desc">What ten months can hold — and what they release.</p></div><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">病床切片</p><p class="entry-desc">A slice from a hospital bed. In Mandarin.</p></div><button class="entry-dl">Download</button></div>
+</div>
+</div>
+
+</body>
+</html>
