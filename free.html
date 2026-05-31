@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Slices · keegou</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<script src="config.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
@@ -33,7 +32,7 @@ body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weig
 .entry-desc{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B}
 .entry-status{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;color:#9B9B9B;white-space:nowrap}
 .entry-status.ok{color:#6B8F5E}
-.entry-dl{flex-shrink:0;font-family:'Inter',sans-serif;font-size:10pt;color:#8B6F5E;background:none;border:1px solid #E0D6CC;padding:4px 14px;cursor:pointer}
+.entry-dl{flex-shrink:0;font-family:'Inter',sans-serif;font-size:10pt;color:#8B6F5E;background:none;border:1px solid #E0D6CC;padding:4px 14px;cursor:pointer;text-decoration:none;display:inline-block}
 .entry-dl:hover{opacity:.6}
 hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
 @media(max-width:640px){.page{padding:80px 20px 40px}.entry{flex-wrap:wrap;gap:6px}.entry-info{width:100%;padding-right:0}.nav-links{gap:16px}}
@@ -44,7 +43,7 @@ hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
 <nav class="nav">
 <div class="nav-inner">
 <a class="nav-brand" href="index.html">
-<img class="nav-avatar" src="" alt="keegou" id="avatar-img">
+<img class="nav-avatar" src="https://i.ibb.co/GQKy62D1/1775996572835.png" alt="keegou">
 <span>keegou</span>
 </a>
 <ul class="nav-links">
@@ -77,16 +76,12 @@ hr{border:none;border-top:1px solid #E0D6CC;margin:32px 0}
 
 <div class="series">
 <h3 class="series-title">Free Slices</h3>
-<div class="entry"><div class="entry-info"><p class="entry-name">The Lighter Clicked Once</p><p class="entry-desc">A short piece about a single moment in the dark.</p></div><button class="entry-dl">Download</button></div>
-<div class="entry"><div class="entry-info"><p class="entry-name">A Scent Passed By</p><p class="entry-desc">A scent, a stranger, a second. A story in three sentences.</p></div><button class="entry-dl">Download</button></div>
-<div class="entry"><div class="entry-info"><p class="entry-name">Ten Months</p><p class="entry-desc">What ten months can hold — and what they release.</p></div><button class="entry-dl">Download</button></div>
-<div class="entry"><div class="entry-info"><p class="entry-name">A Slice from a Hospital Bed</p><p class="entry-desc">On being forced to slow down, and what the body knew all along.</p></div><button class="entry-dl">Download</button></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">The Lighter Clicked Once</p><p class="entry-desc">A short piece about a single moment in the dark.</p></div><a class="entry-dl" href="/read/the-lighter-clicked-once.html">Open</a></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">A Scent Passed By</p><p class="entry-desc">A scent, a stranger, a second. A story in three sentences.</p></div><a class="entry-dl" href="/read/a-scent-passed-by.html">Open</a></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">Ten Months</p><p class="entry-desc">What ten months can hold — and what they release.</p></div><a class="entry-dl" href="/read/ten-months.html">Open</a></div>
+<div class="entry"><div class="entry-info"><p class="entry-name">A Slice from a Hospital Bed</p><p class="entry-desc">On being forced to slow down, and what the body knew all along.</p></div><a class="entry-dl" href="/read/a-slice-from-a-hospital-bed.html">Open</a></div>
 </div>
 </div>
-
-<script>
-document.getElementById('avatar-img').src = AVATAR_URL;
-</script>
 
 </body>
 </html>
