@@ -9,70 +9,57 @@
 body{
   background:#FDFAF7;
   font-family:'Inter','Helvetica Neue','Arial','Segoe UI',sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:40px 20px;
   color:#3A3A3A;
 }
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:1000;
-  background:#F6F1EC;
-  border-bottom:1px solid #E0D6CC;
-  font-size:12pt;color:#8B6F5E;
-}
-.nav-inner{
-  max-width:640px;margin:0 auto;padding:14px 24px;
-  display:flex;justify-content:space-between;align-items:center;
-}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#8B6F5E;}
-.nav-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #E0D6CC;opacity:.85;}
-.nav-links{display:flex;gap:28px;list-style:none;}
-.nav-links a{color:#8B6F5E;text-decoration:none;}
-.nav-links a:hover{opacity:.6;}
-.nav-links a.active{font-weight:600;}
-
-.home-wrap{
-  min-height:100vh;
-  display:flex;flex-direction:column;justify-content:center;align-items:center;
-  text-align:center;padding:80px 24px 40px;
+.container{
+  max-width:500px;
+  width:100%;
+  text-align:center;
 }
 .quiet{font-size:26pt;font-weight:300;color:#8B6F5E;letter-spacing:-0.3px;margin-bottom:8px;}
-.tagline{font-size:13pt;font-weight:300;color:#B8A092;font-style:italic;margin-bottom:48px;}
-.home-links{display:flex;flex-direction:column;gap:12px;margin-bottom:36px;}
-.home-links a{
-  font-size:13pt;font-weight:400;
-  color:#3A3A3A;text-decoration:none;transition:opacity .2s;
+.tagline{font-size:13pt;font-weight:300;color:#B8A092;font-style:italic;margin-bottom:50px;}
+.reminder{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#B8A092;margin-bottom:36px;line-height:1.8;}
+.nav-links{display:flex;flex-direction:column;gap:12px;margin-bottom:30px;}
+.nav-links a{
+  font-family:'Inter',sans-serif;
+  font-size:13pt;
+  font-weight:400;
+  color:#3A3A3A;
+  text-decoration:none;
+  transition:opacity .2s;
 }
-.home-links a:hover{opacity:.6;}
+.nav-links a:hover{opacity:.6;}
 .divider{width:40px;height:1px;background:#D4C5B9;margin:0 auto 28px;}
 .jar-link{
-  font-size:13pt;font-weight:300;font-style:italic;
-  color:#B8A092;text-decoration:none;line-height:1.6;
-  transition:opacity .2s;margin-bottom:48px;
+  display:inline-block;
+  font-family:'Inter',sans-serif;
+  font-size:13pt;
+  font-weight:300;
+  font-style:italic;
+  color:#B8A092;
+  text-decoration:none;
+  line-height:1.6;
+  transition:opacity .2s;
+  margin-bottom:50px;
 }
 .jar-link:hover{opacity:.7;}
-.home-footer{font-size:11pt;color:#C4B8AC;font-weight:300;}
+.footer{font-size:11pt;color:#C4B8AC;font-weight:300;}
 </style>
 </head>
 <body>
+<div class="container">
 
-<nav class="nav">
-<div class="nav-inner">
-<a class="nav-brand" href="index.html">
-<img class="nav-avatar" src="https://i.ibb.co/GQKy62D1/1775996572835.png" alt="keegou">
-<span>keegou</span>
-</a>
-<ul class="nav-links">
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="shop.html">Slice Shop</a></li>
-<li><a href="free.html">Free Slices</a></li>
-<li><a href="about.html">About</a></li>
-</ul>
-</div>
-</nav>
-
-<div class="home-wrap">
 <div class="quiet">Quiet words for the road.</div>
 <div class="tagline">A companion, not a code.</div>
 
-<div class="home-links">
+<div class="reminder">Don&rsquo;t get lost in my story.<br>You have your own road to walk.</div>
+
+<div class="nav-links">
   <a href="free.html">Free Slices</a>
   <a href="shop.html">The Slice Shop</a>
   <a href="about.html">About</a>
@@ -82,8 +69,8 @@ body{
 
 <a class="jar-link" href="jar.html">☕<br>A coffee, if you&rsquo;d like.</a>
 
-<div class="home-footer">Personal slices, notebooks, and quiet things.</div>
-</div>
+<div class="footer">Personal slices, notebooks, and quiet things.</div>
 
+</div>
 </body>
 </html>
