@@ -1,39 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://keegou.com/index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://keegou.com/start-here.html</loc><priority>0.8</priority></url>
-  <url><loc>https://keegou.com/free.html</loc><priority>0.9</priority></url>
-  <url><loc>https://keegou.com/shop.html</loc><priority>0.8</priority></url>
-  <url><loc>https://keegou.com/about.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/jar.html</loc><priority>0.5</priority></url>
-  <url><loc>https://keegou.com/jar-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/privacy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/refund.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/terms.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/life-bits.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/life-bits-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/how-i-found-my-way.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/how-i-found-my-way-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/wash-the-socks.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/wash-the-socks-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/before-i-knew-it.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/before-i-knew-it-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/i-didnt-tell-anyone.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/i-didnt-tell-anyone-thanks.html</loc><priority>0.3</priority></url>
-  <url><loc>https://keegou.com/read/the-lighter-clicked-once.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/read/a-scent-passed-by.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/read/ten-months.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/read/a-slice-from-a-hospital-bed.html</loc><priority>0.7</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week1.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week2.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week3.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week4.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week5.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week6.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week7.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week8.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week9.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week10.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week11.html</loc><priority>0.6</priority></url>
-  <url><loc>https://keegou.com/The%20Quiet%20Growth%20Notebook/week12.html</loc><priority>0.6</priority></url>
-</urlset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You · keegou</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:12pt;line-height:2.0;-webkit-font-smoothing:antialiased}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#F6F1EC;border-bottom:1px solid #E0D6CC;font-family:'Inter',sans-serif;font-size:11pt;color:#8B6F5E}
+.nav-inner{max-width:640px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#8B6F5E}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:#8B6F5E;text-decoration:none}
+.nav-links a:hover{opacity:.6}
+.page{max-width:540px;margin:0 auto;padding:120px 24px 60px;text-align:center}
+.symbol{font-size:28pt;margin-bottom:24px;color:#8B6F5E;font-family:'Lora',Georgia,serif;font-style:italic}
+.thank-title{font-family:'Inter',sans-serif;font-weight:600;font-size:20pt;color:#8B6F5E;margin-bottom:16px}
+.thank-body{font-size:12pt;color:#3A3A3A;margin-bottom:32px;line-height:2.2}
+.thank-body p{margin-bottom:16px}
+.thank-footer{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B}
+.thank-footer a{color:#8B6F5E;text-decoration:none}
+.back-link{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;color:#9B9B9B;margin-top:40px;display:inline-block}
+.back-link a{color:#8B6F5E;text-decoration:none}
+.copyright{font-family:'Inter',sans-serif;font-size:8pt;color:#D4C5B9;font-weight:300;text-align:center;padding-top:16px}
+@media(max-width:640px){.page{padding:100px 20px 40px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a class="nav-brand" href="/index.html"><span>keegou</span></a>
+<ul class="nav-links">
+<li><a href="/index.html">Home</a></li>
+<li><a href="/shop.html">Slice Shop</a></li>
+<li><a href="/free.html">Free Slices</a></li>
+<li><a href="/about.html">About</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="page">
+<div class="symbol">— —</div>
+<h2 class="thank-title">Thank you.</h2>
+<div class="thank-body">
+<p>I Didn't Tell Anyone is yours now.</p>
+<p>I wrote this down because I wanted to remember what it felt like — before anyone knew, before I had to explain it.</p>
+<p>You don't have to tell anyone. You don't have to keep it to yourself either. Either way, you're not alone in it.</p>
+<p>No follow-ups. No newsletters. No "what's next."</p>
+<p>Just this.</p>
+<p>— keegou</p>
+</div>
+<p class="thank-footer"><a href="mailto:hello@keegou.com">hello@keegou.com</a></p>
+<p class="back-link"><a href="/index.html">← Back to Home</a></p>
+<div class="copyright">&copy; keegou</div>
+</div>
+
+</body>
+</html>
