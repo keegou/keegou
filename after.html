@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>After · keegou</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#F6F1EC;border-bottom:1px solid #E0D6CC;font-family:'Inter',sans-serif;font-size:11pt;color:#8B6F5E}
+.nav-inner{max-width:640px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#8B6F5E}
+.nav-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #E0D6CC;opacity:.85}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:#8B6F5E;text-decoration:none}
+.nav-links a:hover{opacity:.6}
+.nav-links a.active{font-weight:600}
+.page{max-width:640px;margin:0 auto;padding:80px 24px 60px}
+.page-title{font-family:'Inter',sans-serif;font-weight:600;font-size:16pt;color:#8B6F5E;text-align:center;margin-bottom:8px}
+.page-subtitle{font-family:'Inter',sans-serif;font-weight:400;font-size:11pt;color:#3A3A3A;text-align:center;margin-bottom:32px}
+.back-link{font-family:'Inter',sans-serif;font-weight:400;font-size:10pt;color:#9B9B9B;margin-bottom:24px;display:inline-block}
+.back-link a{color:#8B6F5E;text-decoration:none}
+.product{margin-top:32px;padding-top:32px;border-top:1px solid #E0D6CC}
+.product-item{margin-bottom:32px}
+.product-title{font-family:'Inter',sans-serif;font-weight:400;font-size:12pt;color:#3A3A3A;margin-bottom:4px}
+.product-desc{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B;margin-bottom:8px}
+.product-link{font-family:'Inter',sans-serif;font-size:10pt;color:#8B6F5E;text-decoration:none;border-bottom:1px solid #E0D6CC;padding-bottom:2px}
+.product-link:hover{border-color:#8B6F5E}
+.intro{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B;text-align:center;margin-bottom:32px;line-height:1.8}
+.here-note{font-family:'Inter',sans-serif;font-weight:300;font-size:10pt;font-style:italic;color:#9B9B9B;text-align:center;margin-top:48px}
+.here-note a{color:#8B6F5E;text-decoration:none;border-bottom:1px solid #E0D6CC}
+.copyright{font-family:'Inter',sans-serif;font-size:8pt;color:#D4C5B9;font-weight:300;text-align:center;padding-top:32px}
+@media(max-width:640px){.page{padding:80px 20px 40px}.nav-links{gap:16px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a class="nav-brand" href="index.html">
+<img class="nav-avatar" src="" alt="keegou" id="avatar-img">
+<span>keegou</span>
+</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="after.html" class="active">After</a></li>
+<li><a href="here.html">Here</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="page">
+<p class="back-link"><a href="index.html">← Home</a></p>
+<h2 class="page-title">After</h2>
+<p class="page-subtitle">A step further, if you'd like.</p>
+
+<p class="intro">This is where I put the things I tried — <br>the practices, the frameworks, the steps I took. <br>Not a course. Not a system. Just what worked for me.</p>
+
+<div class="product">
+<div class="product-item">
+<p class="product-title">Life Bits: Quiet Words for the Road</p>
+<p class="product-desc">A collection of words I needed to hear — and maybe you do too. Not advice. Not a guide. A companion.</p>
+<a class="product-link" href="/life-bits.html">View →</a>
+</div>
+</div>
+
+<p class="here-note">Not ready yet? <a href="here.html">Everything free is over here.</a></p>
+<div class="copyright">&copy; keegou</div>
+</div>
+
+<script>
+document.getElementById('avatar-img').src = AVATAR_URL;
+</script>
+
+</body>
+</html>
