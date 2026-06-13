@@ -4,99 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tools · keegou</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#FDFAF7;color:#3A3A3A;font-family:'Lora',Georgia,serif;font-weight:400;font-size:11pt;line-height:2.0;-webkit-font-smoothing:antialiased}
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:#F6F1EC;border-bottom:1px solid #E0D6CC;font-family:'Inter',sans-serif;font-size:11pt;color:#8B6F5E}
-.nav-inner{max-width:640px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#8B6F5E}
-.nav-avatar{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid #E0D6CC;opacity:.85}
-.nav-links{display:flex;gap:24px;list-style:none}
-.nav-links a{color:#8B6F5E;text-decoration:none}
-.nav-links a:hover{opacity:.6}
-.nav-links a.active{font-weight:600}
-.page{max-width:640px;margin:0 auto;padding:80px 24px 60px}
-.page-title{font-family:'Inter',sans-serif;font-weight:600;font-size:16pt;color:#8B6F5E;text-align:center;margin-bottom:8px}
-.page-subtitle{font-family:'Inter',sans-serif;font-weight:400;font-size:11pt;color:#3A3A3A;text-align:center;margin-bottom:40px}
-.back-link{font-family:'Inter',sans-serif;font-weight:400;font-size:10pt;color:#9B9B9B;margin-bottom:32px;display:inline-block}
-.back-link a{color:#8B6F5E;text-decoration:none}
-.back-link a:hover{opacity:.6}
+body{
+  font-family:Georgia,'Times New Roman',serif;
+  background:#faf8f6;color:#3a3a3a;
+  font-size:11pt;line-height:1.8;
+  padding:48px 20px 60px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:#8b6f5e;text-decoration:none}
+a:hover{opacity:.6}
+.page{max-width:600px;margin:0 auto}
+.back{font-size:10pt;color:#bbb;margin-bottom:32px;display:block}
+h1{font-weight:400;font-size:20pt;margin-bottom:4px;letter-spacing:-.3px}
+.sub{font-size:10pt;color:#bbb;margin-bottom:40px;font-style:italic}
 
 /* card grid */
-.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:48px}
 @media(max-width:500px){.card-grid{grid-template-columns:1fr}}
 
-.card-box{perspective:800px;height:220px;cursor:pointer}
-.card-inner{position:relative;width:100%;height:100%;transition:transform .5s ease;transform-style:preserve-3d}
-.card-box.flipped .card-inner{transform:rotateY(180deg)}
+.card-box{-webkit-tap-highlight-color:transparent;perspective:800px;cursor:pointer}
+.card-box .inner{position:relative;width:100%;transition:transform .5s ease;transform-style:preserve-3d;min-height:190px}
+.card-box.flipped .inner{transform:rotateY(180deg)}
 
-.card-front,.card-back{
-  position:absolute;width:100%;height:100%;
-  backface-visibility:hidden;
-  padding:20px;
+.front,.back{
+  position:absolute;width:100%;min-height:190px;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  padding:18px 16px;
   display:flex;flex-direction:column;justify-content:center;
-  background:#FAF7F2;
-  border:1px solid #E0D6CC;
+  background:#fff;border:1px solid #e8e3dc;
 }
-.card-front{align-items:center;text-align:center}
-.card-front .num{font-family:'Inter',sans-serif;font-size:9pt;color:#C4B8AC;margin-bottom:6px}
-.card-front .name{font-family:'Inter',sans-serif;font-size:12pt;font-weight:600;color:#8B6F5E;line-height:1.3}
-.card-front .hint{font-family:'Inter',sans-serif;font-size:9pt;color:#D4C5B9;margin-top:10px;font-style:italic}
+.front{align-items:center;text-align:center}
+.front .num{font-size:9pt;color:#d4cdc2;margin-bottom:4px}
+.front .name{font-size:11pt;font-weight:600;color:#8b6f5e;line-height:1.3}
+.front .hint{font-size:9pt;color:#ddd6cb;margin-top:8px;font-style:italic}
 
-.card-back{transform:rotateY(180deg);align-items:flex-start;text-align:left;background:#F6F1EC}
-.card-back .label{font-family:'Inter',sans-serif;font-size:8pt;color:#C4B8AC;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-.card-back .name{font-family:'Inter',sans-serif;font-size:12pt;font-weight:600;color:#8B6F5E;margin-bottom:6px}
-.card-back .desc{font-size:10pt;color:#666;line-height:1.6}
+.back{transform:rotateY(180deg);align-items:flex-start;text-align:left;background:#f8f5f0}
+.back .label{font-size:8pt;color:#ccc;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.back .name{font-size:11pt;font-weight:600;color:#8b6f5e;margin-bottom:5px}
+.back .desc{font-size:9.5pt;color:#888;line-height:1.5}
 
-/* purchase section */
-.buy-section{border-top:1px solid #E0D6CC;padding-top:32px;margin-bottom:16px;text-align:center}
-.buy-section h3{font-family:'Inter',sans-serif;font-weight:600;font-size:13pt;color:#8B6F5E;margin-bottom:4px}
-.buy-section p{font-family:'Inter',sans-serif;font-size:10pt;color:#9B9B9B;margin-bottom:20px;font-style:italic}
-.buy-btn{
-  font-family:'Inter',sans-serif;font-weight:400;font-size:10pt;
-  color:#8B6F5E;text-decoration:none;
-  padding:8px 24px;border:1px solid #E0D6CC;
+/* purchase */
+.buy{border-top:1px solid #e8e3dc;padding-top:32px;text-align:center;margin-bottom:32px}
+.buy h2{font-weight:400;font-size:13pt;color:#8b6f5e;margin-bottom:4px}
+.buy p{font-size:9.5pt;color:#bbb;margin-bottom:20px;font-style:italic}
+.buy a{
+  font-size:10pt;color:#8b6f5e;
+  padding:8px 24px;border:1px solid #e0d6cc;
   display:inline-block;transition:all .2s;
 }
-.buy-btn:hover{background:#EFE8E0;border-color:#D4C5B9}
-.buy-btn small{opacity:.6}
+.buy a:hover{background:#efe8e0;border-color:#d4c5b9}
+.buy small{opacity:.6}
 
-.copyright{font-family:'Inter',sans-serif;font-size:8pt;color:#D4C5B9;font-weight:300;text-align:center;padding-top:24px}
+.foot{text-align:center;font-size:8pt;color:#ddd6cb;padding-top:16px}
+.foot a{color:#ddd6cb}
+.foot a:hover{color:#bbb}
 </style>
 </head>
 <body>
 
-<nav class="nav">
-<div class="nav-inner">
-<a class="nav-brand" href="/index.html">
-<img class="nav-avatar" src="https://i.ibb.co/GQKy62D1/1775996572835.png" alt="keegou">
-<span>keegou</span>
-</a>
-<ul class="nav-links">
-<li><a href="/index.html">Home</a></li>
-<li><a href="/here.html">Here</a></li>
-<li><a href="/after.html">After</a></li>
-<li><a href="/about.html">About</a></li>
-<li><a href="/tools.html" class="active">Tools</a></li>
-</ul>
-</div>
-</nav>
-
 <div class="page">
-<p class="back-link"><a href="/index.html">← Home</a></p>
-<h2 class="page-title">Tools</h2>
-<p class="page-subtitle">A few things I made. Free to use.</p>
+<a class="back" href="https://keegou.com">← Home</a>
+<h1>Tools</h1>
+<p class="sub">A few things I made. Free to use.</p>
 
 <div class="card-grid" id="cardGrid"></div>
 
-<div class="buy-section">
-<h3>Cognitive Bias Cards</h3>
-<p>Full deck · 50 cards · printable PDF · one-time purchase</p>
-<a class="buy-btn" href="#" id="buyBtn">Coming soon · $5</a>
+<div class="buy">
+<h2>Cognitive Bias Cards</h2>
+<p>Full deck · 50 cards · HTML file · one-time purchase</p>
+<a href="https://www.creem.io/payment/prod_nNrbfZdJhpyQ5obDo2ZTw" target="_blank">Buy · $5</a>
 </div>
 
-<div class="copyright">&copy; keegou</div>
+<div class="foot">© keegou · <a href="https://keegou.com">back</a></div>
 </div>
 
 <script>
@@ -130,7 +111,27 @@ const cards = [
   {name:"Gambler's Fallacy",desc:"You feel 'due' for a win — even though each outcome is independent."},
   {name:"Decoy Effect",desc:"Adding a worse option makes one of the original two look more attractive."},
   {name:"Reactance",desc:"When told 'you can't,' you immediately want to do it more."},
-  {name:"Spotlight Effect",desc:"That embarrassing moment you keep replaying? Most people didn't notice."}
+  {name:"Actor-Observer Bias",desc:"You blame others for their mistakes but excuse your own with circumstances."},
+  {name:"Optimism Bias",desc:"You believe bad things are less likely to happen to you than to others."},
+  {name:"Backfire Effect",desc:"When faced with evidence against your belief, you believe it even more strongly."},
+  {name:"Clustering Illusion",desc:"Your brain sees patterns in random data — and thinks they mean something."},
+  {name:"Declinism",desc:"You remember the past as better than it was and expect the future to be worse."},
+  {name:"Endowment Effect",desc:"You value something more simply because you own it."},
+  {name:"Forer Effect",desc:"You believe personality descriptions written for you are unique — even if they're generic."},
+  {name:"Fundamental Attribution Error",desc:"You judge others by their character, but yourself by your circumstances."},
+  {name:"Groupthink",desc:"A group makes worse decisions because everyone wants to avoid conflict."},
+  {name:"Hyperbolic Discounting",desc:"You prefer a small reward now over a larger reward later — even when waiting is smarter."},
+  {name:"Illusory Correlation",desc:"You believe two things are related just because they happen at the same time."},
+  {name:"Just-World Hypothesis",desc:"You believe the world is fair — so victims must deserve what happened to them."},
+  {name:"Mere Exposure Effect",desc:"The more you see something, the more you like it — even if you didn't at first."},
+  {name:"Ostrich Effect",desc:"You avoid looking at information that might make you uncomfortable."},
+  {name:"Peak-End Rule",desc:"You judge an experience not by the whole, but by its peak moment and how it ended."},
+  {name:"Projection Bias",desc:"You assume others share your current feelings, preferences, or values."},
+  {name:"Salience Bias",desc:"You focus on the most noticeable thing — and miss what matters more."},
+  {name:"Selective Perception",desc:"Your expectations shape what you see — you notice what you expect to notice."},
+  {name:"Semmelweis Reflex",desc:"You reject new evidence that contradicts your established beliefs — automatically."},
+  {name:"Social Proof",desc:"You look at what others are doing to decide what's right for you."},
+  {name:"Blindspot Bias",desc:"You can see biases in others easily — but you can't see your own."}
 ];
 
 const grid = document.getElementById('cardGrid');
@@ -138,13 +139,13 @@ cards.forEach((card, i) => {
   const box = document.createElement('div');
   box.className = 'card-box';
   box.innerHTML = `
-    <div class="card-inner">
-      <div class="card-front">
+    <div class="inner">
+      <div class="front">
         <div class="num">#${i+1}</div>
         <div class="name">${card.name}</div>
         <div class="hint">tap to flip</div>
       </div>
-      <div class="card-back">
+      <div class="back">
         <div class="label">cognitive bias</div>
         <div class="name">${card.name}</div>
         <div class="desc">${card.desc}</div>
@@ -153,8 +154,6 @@ cards.forEach((card, i) => {
   box.addEventListener('click', () => box.classList.toggle('flipped'));
   grid.appendChild(box);
 });
-
-document.getElementById('buyBtn').addEventListener('click', e => { e.preventDefault(); alert('Creem checkout link coming soon.'); });
 </script>
 </body>
 </html>
